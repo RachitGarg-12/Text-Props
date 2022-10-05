@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavScroll from './Components/NavbarComp'
+import TextForm from './Components/TextForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="blank">
+      <NavScroll Appname="Text-Props" About="About Us" />
+      <div className="container my-3">
+        <TextForm text_box_title="Enter the text to analyze" />
+      </div>
     </div>
   );
 }
+
 
 export default App;
